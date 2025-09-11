@@ -67,11 +67,11 @@ function Modules:ServerHop()
 
 		task.spawn(function()
 			for _, Server in pairs(Body.jobs) do
-				if typeof(Server) ~= "table" or not Server.JobId then
+				if typeof(Server) ~= "table" or not Server.JobId or not Server.Diamonds then
 					continue
 				end
 
-				if not table.find(Data.Jobs, Server.JobId) then
+				if Server.Diamonds >= 5 and not table.find(Data.Jobs, Server.JobId) then
 					table.insert(Servers, 1, Server.JobId)
 				end
 			end
