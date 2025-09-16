@@ -71,7 +71,7 @@ function Modules:ServerHop()
 					continue
 				end
 
-				if Server.Diamonds >= 5 and not table.find(Data.Jobs, Server.JobId) then
+				if not table.find(Data.Jobs, Server.JobId) then
 					table.insert(Servers, 1, Server.JobId)
 				end
 			end
