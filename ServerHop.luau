@@ -2,7 +2,7 @@ local Modules = {}
 local Config = { 
     MaxStore = 1800, 
     CheckInterval = 1000, 
-    TeleportInterval = 1000
+    TeleportInterval = 500
 }
 
 local HttpService = game:GetService("HttpService")
