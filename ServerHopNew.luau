@@ -21,7 +21,7 @@ function Modules:ServerHop()
 	local JobId = game.JobId
 
 	local RootFolder = "ServerHop"
-	local StorageFile = `{RootFolder}/{Player.Name}_{tostring(PlaceId)}.json`
+	local StorageFile = `{RootFolder}/{tostring(PlaceId)}.json`
 	local Data = {
 		Start = tick(),
 		Jobs = {},
