@@ -1,6 +1,6 @@
 local Modules = {}
 local Config = { 
-    MaxStore = 3600, 
+    MaxStore = 1800, 
     CheckInterval = 2500, 
     TeleportInterval = 1000
 }
